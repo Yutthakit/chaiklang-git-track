@@ -16,10 +16,13 @@ Built as a **maw plugin** — P'Nat's rule: *a command lives in the Maw Engine.*
 ## Run (in the engine)
 
 ```bash
-ln -sfn "$PWD" ~/.maw/plugins/gittrack   # install
-maw gittrack <repo>          # full report
-maw gittrack <repo> --json   # machine-readable
+ln -sfn "$PWD" ~/.maw/plugins/chaiklang-track   # install
+maw chaiklang-track <repo>          # full report
+maw chaiklang-track <repo> --json   # machine-readable
 ```
+
+> Command is namespaced `chaiklang-track` (not a bare `gittrack`) so it never
+> collides with another oracle's tracker in a shared `~/.maw/plugins`.
 
 ## Real output (`Soul-Brews-Studio/voice-bot`)
 

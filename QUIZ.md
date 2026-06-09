@@ -14,7 +14,7 @@ Plus two standing rules he gave mid-task:
 
 ## What I built
 
-`maw gittrack <repo>` — reads `git log` and answers every question he listed:
+`maw chaiklang-track <repo>` — reads `git log` and answers every question he listed:
 
 | His question | Where answered |
 |---|---|
@@ -28,7 +28,7 @@ Plus two standing rules he gave mid-task:
 
 - **maw plugin** (pure core `gittrack.ts` + thin `index.ts` verb) — WS1 idiom,
   and it satisfies the "in the Maw Engine" rule. Verified live with
-  `maw gittrack`.
+  `maw chaiklang-track`.
 - **`--no-renames`** so a moved file doesn't inflate the deleted count; stated
   in README + SKILL.
 - Shipped a **SKILL.md** too, because the brief said "like the workshop where we
@@ -37,11 +37,11 @@ Plus two standing rules he gave mid-task:
 ## Verification (timeline = proof)
 
 - `bun test` → **9 pass** (parsing, creation-date, deletion, churn, timeline order).
-- Live `maw gittrack` on `voice-bot`: 28 commits → 84 created / 58 present /
+- Live `maw chaiklang-track` on `voice-bot`: 28 commits → 84 created / 58 present /
   **26 deleted**, with creation→deletion dates. (See README.) The tool tracked
   its own proof of work.
 
 ## Next
 
-- `maw gittrack --since <date>` and `--author` to track one person's work.
+- `maw chaiklang-track --since <date>` and `--author` to track one person's work.
 - Feed the JSON into the fleet board so each oracle's daily proof-of-work shows up.

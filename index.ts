@@ -4,8 +4,11 @@
  * P'Nat's rule: a command lives in the Maw Engine. So the deliverable is a maw
  * plugin verb, not a loose script.
  *
- *   maw gittrack [repo]            full report (timeline + summary + changes)
- *   maw gittrack [repo] --json     machine-readable report
+ *   maw chaiklang-track [repo]          full report (timeline + summary + changes)
+ *   maw chaiklang-track [repo] --json   machine-readable report
+ *
+ * (namespaced as chaiklang-track to avoid colliding with other oracles'
+ *  gittrack commands in a shared ~/.maw/plugins — thanks Vessel + ViaLumen.)
  *
  * Thin dispatcher: it only shells out to git and hands the text to the pure
  * core in gittrack.ts (which is unit-tested).
@@ -15,7 +18,7 @@ import { spawnSync } from "child_process";
 import { parseNameStatus, parseNumstat, summarize, formatReport } from "./gittrack";
 
 export const command = {
-  name: "gittrack",
+  name: "chaiklang-track",
   description: "Git Work Tracker — timeline + created/deleted/changed files (proof of work).",
 };
 
@@ -43,7 +46,7 @@ export default async function handler(ctx: InvokeContext): Promise<InvokeResult>
 
   const args = (ctx.args as string[]) ?? [];
   if (args[0] === "--help" || args[0] === "-h") {
-    log("maw gittrack [repo] [--json]  — git history as a timeline of work (created/deleted/changed)");
+    log("maw chaiklang-track [repo] [--json]  — git history as a timeline of work (created/deleted/changed)");
     return done(true);
   }
   const json = args.includes("--json");

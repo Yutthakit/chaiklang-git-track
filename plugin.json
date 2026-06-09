@@ -7,9 +7,9 @@
   "author": "chai-klang-oracle",
   "capabilities": [],
   "cli": {
-    "command": "gittrack",
-    "aliases": ["gt", "track"],
-    "help": "maw gittrack [repo] [--json] — timeline + created/deleted/changed files"
+    "command": "chaiklang-track",
+    "aliases": ["cktrack"],
+    "help": "maw chaiklang-track [repo] [--json] — timeline + created/deleted/changed files"
   },
   "weight": 50,
   "license": "MIT",

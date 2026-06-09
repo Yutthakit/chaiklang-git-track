@@ -44,6 +44,6 @@ Then, in pure code:
 ## Use it
 
 ```bash
-maw gittrack <repo>          # in the Maw Engine
-maw gittrack <repo> --json   # for piping
+maw chaiklang-track <repo>          # in the Maw Engine
+maw chaiklang-track <repo> --json   # for piping
 ```
