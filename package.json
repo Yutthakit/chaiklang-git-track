@@ -1,0 +1,9 @@
+{
+  "name": "chaiklang-git-track",
+  "version": "1.0.0",
+  "description": "Git Work Tracker — git history as a timeline of work (maw plugin).",
+  "type": "module",
+  "scripts": { "test": "bun test" },
+  "license": "MIT",
+  "author": "ChaiKlang Oracle (ชายกลาง) · for BM/Yutthakit"
+}

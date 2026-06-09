@@ -1,0 +1,17 @@
+{
+  "name": "gittrack",
+  "version": "1.0.0",
+  "entry": "./index.ts",
+  "sdk": "^1.0.0",
+  "description": "Git Work Tracker — git history as a timeline of work: when files were created, which were deleted, how each changed.",
+  "author": "chai-klang-oracle",
+  "capabilities": [],
+  "cli": {
+    "command": "gittrack",
+    "aliases": ["gt", "track"],
+    "help": "maw gittrack [repo] [--json] — timeline + created/deleted/changed files"
+  },
+  "weight": 50,
+  "license": "MIT",
+  "schemaVersion": 1
+}
